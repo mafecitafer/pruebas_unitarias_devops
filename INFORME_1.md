@@ -71,6 +71,8 @@ En la primera medición, con las 27 pruebas iniciales, la cobertura era 84 % en 
 
 Evidencias de las ejecuciones (carpeta evidencias/): pytest_rojo.txt, pytest_verde.txt y cobertura.txt.
 
+Capturas de las ejecuciones (carpeta evidencias/): 01_pytest_rojo.png, 02_pytest_verde_27.png, 03_cobertura_100.png
+
 
 ## 5. REFLEXION FINAL
 
