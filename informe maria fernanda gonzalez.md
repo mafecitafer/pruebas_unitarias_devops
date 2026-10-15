@@ -1,7 +1,5 @@
 # Informe: Pruebas unitarias con pytest
-
 ## 1. Datos
-
 * Estudiante: Maria Fernanda Gonzalez Arango
 * Repositorio (fork): https://github.com/mafecitafer/pruebas_unitarias_devops
 * Módulos trabajados: calculadora, descuentos, validador (carpeta src/)
