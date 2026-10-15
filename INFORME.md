@@ -69,6 +69,8 @@ Lectura de los resultados: los tres módulos superan la meta de 85 % y llegaron 
 
 En la primera medición, con las 27 pruebas iniciales, la cobertura era 84 % en calculadora, 67 % en descuentos y 60 % en validador. La columna de líneas sin cubrir me mostró qué casos faltaban y con eso armé la segunda tanda de pruebas.
 
+Nota: si se corre pytest con --cov=src (todo el paquete), el TOTAL aparece en 29 % porque incluye los siete módulos que no trabajé (autenticacion, conversor, csv_parser, fibonacci, manipulador_texto, procesador_texto y utils), que quedan en 0 %. En los tres módulos trabajados (calculadora, descuentos y validador) la cobertura es del 100 %. 
+
 Evidencias de las ejecuciones (carpeta evidencias/): pytest_rojo.txt, pytest_verde.txt y cobertura.txt.
 
 Capturas de las ejecuciones (carpeta evidencias/): 01_pytest_rojo.png, 02_pytest_verde_27.png, 03_cobertura_100.png
