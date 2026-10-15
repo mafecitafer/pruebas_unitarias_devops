@@ -1,0 +1,33 @@
+....F...F....F..........FF.                                              [100%]
+=================================== FAILURES ===================================
+__________________ test_raiz_cuadrada_de_negativo_lanza_error __________________
+tests/test_calculadora.py:42: in test_raiz_cuadrada_de_negativo_lanza_error
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE <class 'ValueError'>
+________________________ test_minimo_lista_de_positivos ________________________
+tests/test_calculadora.py:74: in test_minimo_lista_de_positivos
+    assert resultado == 3
+E   assert 0 == 3
+______________ test_precio_final_impuesto_sobre_precio_descontado ______________
+tests/test_descuentos.py:27: in test_precio_final_impuesto_sobre_precio_descontado
+    assert resultado == pytest.approx(107.1)
+E   assert 109.0 == 107.1 ± 1.1e-04
+E     
+E     comparison failed
+E     Obtained: 109.0
+E     Expected: 107.1 ± 1.1e-04
+_______________________ test_validar_fecha_31_de_febrero _______________________
+tests/test_validador.py:58: in test_validar_fecha_31_de_febrero
+    assert resultado is False
+E   assert True is False
+__________________ test_validar_fecha_29_febrero_no_bisiesto ___________________
+tests/test_validador.py:66: in test_validar_fecha_29_febrero_no_bisiesto
+    assert resultado is False
+E   assert True is False
+=========================== short test summary info ============================
+FAILED tests/test_calculadora.py::test_raiz_cuadrada_de_negativo_lanza_error
+FAILED tests/test_calculadora.py::test_minimo_lista_de_positivos - assert 0 == 3
+FAILED tests/test_descuentos.py::test_precio_final_impuesto_sobre_precio_descontado
+FAILED tests/test_validador.py::test_validar_fecha_31_de_febrero - assert Tru...
+FAILED tests/test_validador.py::test_validar_fecha_29_febrero_no_bisiesto - a...
+5 failed, 22 passed in 0.07s
