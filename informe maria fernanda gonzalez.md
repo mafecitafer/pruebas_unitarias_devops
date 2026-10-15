@@ -1,4 +1,4 @@
-# Informe: Pruebas unitarias con pytest
+# INFORME: Pruebas unitarias con pytest
 
 ## 1. DATOS
 * Estudiante: Maria Fernanda Gonzalez Arango
