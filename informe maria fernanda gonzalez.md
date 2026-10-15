@@ -1,13 +1,13 @@
 # Informe: Pruebas unitarias con pytest
 
- 1. Datos
+## 1. DATOS
 * Estudiante: Maria Fernanda Gonzalez Arango
 * Repositorio (fork): https://github.com/mafecitafer/pruebas_unitarias_devops
 * Módulos trabajados: calculadora, descuentos, validador (carpeta src/)
 * Resultado final: 79 pruebas en verde y 100 % de cobertura en los tres módulos (meta: 85 %)
 
 
-## 2. Análisis por módulo
+## 2. ANALISIS POR MODULO
 
 Organicé los archivos de prueba dentro de la carpeta tests/ (test_calculadora.py, test_descuentos.py y test_validador.py), siguiendo la estructura AAA (Arrange, Act, Assert). El trabajo lo dividí en dos etapas: primero me enfoqué en escribir pruebas para detectar errores y casos límite, y luego agregué casos para cubrir las líneas o ramas que aún no se ejecutaban.
 
@@ -18,7 +18,7 @@ Organicé los archivos de prueba dentro de la carpeta tests/ (test_calculadora.p
 * validador (36 pruebas): Incluí casos válidos, entradas vacías y casos que violaran las reglas de cada función (correos sin arroba, contraseñas sin mayúsculas, cédulas con letras). En validar_fecha probé fechas inválidas como el 31 de febrero o el 29 de febrero en años no bisiestos. Esto reveló que la función original solo revisaba que el día estuviera en el rango de 1 a 31.
 
 
-## 3. Bugs encontrados y correcciones
+## 3. BUGS ENCONTRADOS Y CORRECCIONES
 
 1. calculadora.minimo: Al pasar [5, 3, 8] devolvía 0 en lugar de 3. Se corrigió inicializando la variable con el primer elemento de la lista (min_val = lista[0]).
 2. calculadora.raiz_cuadrada: Al ingresar un número negativo como -4 devolvía un número complejo sin lanzar excepción. Se ajustó para lanzar un ValueError cuando el parámetro sea menor a cero.
@@ -26,7 +26,7 @@ Organicé los archivos de prueba dentro de la carpeta tests/ (test_calculadora.p
 4. validador.validar_fecha: Aceptaba fechas como (31, 2, 2025) y (29, 2, 2023) devolviendo True. Se corrigió validando el límite de días según el mes y año mediante calendar.monthrange.
 
 
-## 4. Cobertura de código y evidencias
+## 4. COBERTURA Y EVIDENCIAS
 
 Para el manejo del repositorio mantuve un flujo de Git ordenado: registré primero los commits con las pruebas que fallaban en rojo y posteriormente los commits con las correcciones correspondientes en el código fuente.
 
@@ -40,7 +40,7 @@ El reporte de cobertura final obtenido en la terminal muestra un 100 % de cobert
 En la primera medición con las 27 pruebas iniciales la cobertura era del 84 % en calculadora, 67 % en descuentos y 60 % en validador. La columna de líneas no cubiertas me sirvió de guía para diseñar la segunda tanda de pruebas hasta completar la totalidad de las sentencias.
 
 
-## 5. Reflexión final
+## 5. REFLEXION FINAL
 
 Este taller me permitió comprender el valor práctico de las pruebas en rojo como mecanismo de diagnóstico previo a la modificación del código. Descubrir el fallo en calcular_precio_final me demostró la importancia de calcular previamente el resultado esperado de forma independiente en lugar de asumir como correcto el valor devuelto por la aplicación.
 
