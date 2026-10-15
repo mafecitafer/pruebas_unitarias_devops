@@ -28,6 +28,8 @@ def potencia(base, exponente):
 def raiz_cuadrada(numero):
     """Calcula la raíz cuadrada de un número."""
     # BUG 1: No maneja números negativos
+    if numero < 0:
+        raise ValueError("No existe raíz cuadrada real de un número negativo")
     return numero ** 0.5
 
 def promedio(lista):
@@ -37,7 +39,7 @@ def promedio(lista):
     return sum(lista) / len(lista)
 
 def maximo(lista):
-ra el número máximo de una lista."""
+    """Encuentra el número máximo de una lista."""
     if not lista:
         raise ValueError("La lista no puede estar vacía")
     max_val = lista[0]
