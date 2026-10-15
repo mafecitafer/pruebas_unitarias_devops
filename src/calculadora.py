@@ -37,7 +37,7 @@ def promedio(lista):
     return sum(lista) / len(lista)
 
 def maximo(lista):
-    """Encuentra el número máximo de una lista."""
+ra el número máximo de una lista."""
     if not lista:
         raise ValueError("La lista no puede estar vacía")
     max_val = lista[0]
@@ -51,7 +51,7 @@ def minimo(lista):
     if not lista:
         raise ValueError("La lista no puede estar vacía")
     # BUG 2: No maneja correctamente la comparación inicial
-    min_val = 0
+    min_val = lista[0]
     for num in lista:
         if num < min_val:
             min_val = num
