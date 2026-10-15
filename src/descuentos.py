@@ -40,7 +40,7 @@ def calcular_precio_final(precio, impuesto, descuento):
 
     # Luego aplicar el impuesto
     # BUG 1: El impuesto se aplica incorrectamente
-    impuesto_monto = precio * (impuesto / 100)
+    impuesto_monto = precio_con_descuento * (impuesto / 100)
     precio_final = precio_con_descuento + impuesto_monto
 
     return precio_final
