@@ -64,9 +64,9 @@ TOTAL                    169      0   100%
 
 En la primera medición, con las 27 pruebas iniciales, la cobertura era 84 % en calculadora, 67 % en descuentos y 60 % en validador. La columna de líneas sin cubrir me mostró qué casos faltaban y con eso armé la segunda tanda de pruebas.
 
-# Evidencias de las ejecuciones (carpeta evidencias/): pytest_rojo.txt, pytest_verde.txt y cobertura.txt.
+Evidencias de las ejecuciones (carpeta evidencias/): pytest_rojo.txt, pytest_verde.txt y cobertura.txt.
 
-# Capturas de las ejecuciones (carpeta evidencias/): 01_pytest_rojo.txt, 02_pytest_verde_27.txt y 03_cobertura_100.txt.
+Capturas de las ejecuciones (carpeta evidencias/): 01_pytest_rojo.txt, 02_pytest_verde_27.txt y 03_cobertura_100.txt.
 
 
 ## 5. REFLEXION FINAL
