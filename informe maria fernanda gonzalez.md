@@ -7,7 +7,6 @@
 * Módulos trabajados: calculadora, descuentos, validador (carpeta src/)
 * Resultado final: 79 pruebas en verde y 100 % de cobertura en los tres módulos (meta: 85 %)
 
----
 
 ## 2. Análisis por módulo
 
@@ -19,7 +18,6 @@ Organicé los archivos de prueba dentro de la carpeta tests/ (test_calculadora.p
 
 * validador (36 pruebas): Incluí casos válidos, entradas vacías y casos que violaran las reglas de cada función (correos sin arroba, contraseñas sin mayúsculas, cédulas con letras). En validar_fecha probé fechas inválidas como el 31 de febrero o el 29 de febrero en años no bisiestos. Esto reveló que la función original solo revisaba que el día estuviera en el rango de 1 a 31.
 
----
 
 ## 3. Bugs encontrados y correcciones
 
@@ -28,7 +26,6 @@ Organicé los archivos de prueba dentro de la carpeta tests/ (test_calculadora.p
 3. descuentos.calcular_precio_final: Con un precio de 100, 19 % de impuesto y 10 % de descuento devolvía 109.0 en vez de 107.1. Se corrigió calculando el impuesto sobre el valor con descuento.
 4. validador.validar_fecha: Aceptaba fechas como (31, 2, 2025) y (29, 2, 2023) devolviendo True. Se corrigió validando el límite de días según el mes y año mediante calendar.monthrange.
 
----
 
 ## 4. Cobertura de código y evidencias
 
@@ -43,7 +40,6 @@ El reporte de cobertura final obtenido en la terminal muestra un 100 % de cobert
 
 En la primera medición con las 27 pruebas iniciales la cobertura era del 84 % en calculadora, 67 % en descuentos y 60 % en validador. La columna de líneas no cubiertas me sirvió de guía para diseñar la segunda tanda de pruebas hasta completar la totalidad de las sentencias.
 
----
 
 ## 5. Reflexión final
 
