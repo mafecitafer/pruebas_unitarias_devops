@@ -13,7 +13,7 @@
 
 ## 2. ANALISIS POR MODULO
 
-Las pruebas están en la carpeta tests/ (test_calculadora.py, test_descuentos.py y test_validador.py, más un archivo test_extra_*.py por módulo) y todas siguen la estructura AAA (Arrange, Act, Assert). Trabajé en dos etapas: primero escribí pruebas para encontrar errores y casos límite, y después agregué casos (los archivos test_extra_*.py) para cubrir las líneas que todavía no se ejecutaban.
+Las pruebas están en la carpeta tests/ (test_calculadora.py, test_descuentos.py y test_validador.py, más un archivo test_extra_.py por módulo) y todas siguen la estructura AAA (Arrange, Act, Assert). Trabajé en dos etapas: primero escribí pruebas para encontrar errores y casos límite, y después agregué casos (los archivos test_extra_.py) para cubrir las líneas que todavía no se ejecutaban.
 
 * calculadora (18 pruebas): Este módulo reúne operaciones matemáticas básicas (suma, resta, multiplicación, división, potencia, raíz cuadrada, promedio, máximo, mínimo, y área y perímetro de un rectángulo). Probé las operaciones principales y me fijé sobre todo en los casos donde el código podía fallar sin avisar: listas vacías, números negativos y listas con solo valores positivos. Para los errores esperados (como la raíz de un número negativo) usé pytest.raises(ValueError). Así encontré que minimo devolvía 0 cuando la lista tenía solo positivos y que raiz_cuadrada aceptaba números negativos sin lanzar error.
 
